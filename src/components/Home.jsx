@@ -13,6 +13,7 @@ const Home = () => {
       characters.map(character => (
         <div key={character.id}>
           <a href={`/character/${character.id}`}>{character.name}</a>
+          {/* <img src={character.image} alt='' /> */}
         </div>
       ))
     ) : ('No hay personajes')}
