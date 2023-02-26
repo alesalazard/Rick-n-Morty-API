@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
-@import '../styles/_header.css';
-body {
-  background-color: rgb(198, 196, 196);
-  margin: 100px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
 
 header .nav-color {
   background-color: #97ce4c;
@@ -14,13 +8,13 @@ header .nav-color {
 header .navbar-brand {
   font-family: "Creepster", cursive;
   font-size: 3rem;
-  color: #311f19d1;
+  color: rgba(49, 31, 25, 0.8196078431);
   text-shadow: 1px 1px #f5bdbd;
 }
 header .navbar-brand span {
   font-size: 1.2rem;
-  color: #a52a2aa9;
+  color: rgba(165, 42, 42, 0.7882352941);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
   text-shadow: none;
-}/*# sourceMappingURL=custom.css.map */
+}

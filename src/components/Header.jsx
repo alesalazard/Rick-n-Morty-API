@@ -1,12 +1,13 @@
 import React from "react";
-import '../scss/custom.css';
+// import '../../src/custom.css';
+import '../styles/_header.scss';
 
 const Header = () => {
   return (
     <header className='container-fluid header-container'>
-      <nav className='navbar navbar-light bg-light fixed-top'>
+      <nav className='navbar nav-color fixed-top'>
         <div className='container-fluid'>
-          <h1 className='navbar-brand'>RICK & MORTY MULTIVERSE</h1>
+          <h1 className='navbar-brand'>RICK & MORTY <span>MULTIVERSE</span></h1>
           <button
             className='navbar-toggler'
             type='button'
@@ -16,7 +17,7 @@ const Header = () => {
             <span className='navbar-toggler-icon'></span>
           </button>
           <div
-            className='offcanvas offcanvas-end'
+            className='offcanvas offcanvas-end nav-color'
             tabIndex='-1'
             id='offcanvasNavbar'
             aria-labelledby='offcanvasNavbarLabel'>

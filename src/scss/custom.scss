@@ -1,26 +1,38 @@
-// Custom.scss
-// Option B: Include parts of Bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+$grey-light: rgb(198, 196, 196);
+$greenie: #97ce4c;
+$coffeesh: #311f19d1;
+$coffee-shadow: 1px 1px #f5bdbd;;
+$title-font: 'Creepster', cursive;
+$general-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+// @import '~bootstrap/scss/bootstrap';
+@import '../styles/_header.css';
 
-// 2. Include any default variable overrides here
+body {
+  background-color: $grey-light;
+  margin: 100px;
+  font-family: $general-font;
+}
 
-// 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+header {
+  .nav-color {
+    background-color: $greenie;
+    font-size: 2rem;
+    color: $coffeesh;
+  }
+  .navbar-brand {
+    font-family: $title-font;
+    font-size: 3rem;
+    color: $coffeesh;
+    text-shadow: $coffee-shadow;
 
-// 4. Include any optional Bootstrap CSS as needed
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/helpers";
-
-// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "../node_modules/bootstrap/scss/utilities/api";
-
-// 6. Add additional custom code here
+    span{
+      font-size: 1.2rem;
+      color: #a52a2aa9;
+      font-family: $general-font;
+      font-style: oblique;
+      text-shadow: none;
+    }
+  }
+}
