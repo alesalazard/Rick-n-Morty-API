@@ -1,100 +1,91 @@
 import React from "react";
-import '../styles/Header.css';
+import '../scss/custom.css';
 
 const Header = () => {
   return (
     <header className='container-fluid header-container'>
-      <nav class='navbar navbar-dark bg-dark fixed-top'>
-        <div class='container-fluid'>
-          <h1 class='navbar-brand'>
-            RICK & MORTY MULTIVERSE
-          </h1>
+      <nav className='navbar navbar-light bg-light fixed-top'>
+        <div className='container-fluid'>
+          <h1 className='navbar-brand'>RICK & MORTY MULTIVERSE</h1>
           <button
-            class='navbar-toggler'
+            className='navbar-toggler'
             type='button'
             data-bs-toggle='offcanvas'
             data-bs-target='#offcanvasNavbar'
-            aria-controls='offcanvasNavbar'
-          >
-            <span class='navbar-toggler-icon'></span>
+            aria-controls='offcanvasNavbar'>
+            <span className='navbar-toggler-icon'></span>
           </button>
           <div
-            class='offcanvas offcanvas-end'
-            tabindex='-1'
+            className='offcanvas offcanvas-end'
+            tabIndex='-1'
             id='offcanvasNavbar'
-            aria-labelledby='offcanvasNavbarLabel'
-          >
-            <div class='offcanvas-header'>
-              <h5 class='offcanvas-title' id='offcanvasNavbarLabel'>
-                Get an Adventure!
-              </h5>
+            aria-labelledby='offcanvasNavbarLabel'>
+            <div className='offcanvas-header'>
+              <h5 className='offcanvas-title' id='offcanvasNavbarLabel'>Get an Adventure!</h5>
               <button
                 type='button'
-                class='btn-close text-reset'
+                className='btn-close text-reset'
                 data-bs-dismiss='offcanvas'
-                aria-label='Close'
-              ></button>
+                aria-label='Close'>
+              </button>
             </div>
-            <div class='offcanvas-body'>
-              <ul class='navbar-nav justify-content-end flex-grow-1 pe-3'>
-                <li class='nav-item '>
+            <div className='offcanvas-body'>
+              <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
+                <li className='nav-item '>
                   <a
-                    class='nav-link active nav-item-color'
+                    className='nav-link'
                     aria-current='page'
-                    href='#home'
-                  >
+                    href='#home'>
                     Home
                   </a>
                 </li>
-                <li class='nav-item'>
-                  <a class='nav-link' href='#characters'>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#characters'>
                     Characters
                   </a>
                 </li>
-                <li class='nav-item dropdown'>
+                <li className='nav-item dropdown'>
                   <a
-                    class='nav-link dropdown-toggle'
+                    className='nav-link dropdown-toggle'
                     href='#history'
                     id='offcanvasNavbarDropdown'
                     role='button'
                     data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
+                    aria-expanded='false'>
                     Dropdown
                   </a>
                   <ul
-                    class='dropdown-menu'
-                    aria-labelledby='offcanvasNavbarDropdown'
-                  >
+                    className='dropdown-menu'
+                    aria-labelledby='offcanvasNavbarDropdown'>
                     <li>
-                      <a class='dropdown-item' href='#first'>
+                      <a className='dropdown-item' href='#first'>
                         Action
                       </a>
                     </li>
                     <li>
-                      <a class='dropdown-item' href='#second'>
+                      <a className='dropdown-item' href='#second'>
                         Another action
                       </a>
                     </li>
                     <li>
-                      <hr class='dropdown-divider' />
+                      <hr className='dropdown-divider' />
                     </li>
                     <li>
-                      <a class='dropdown-item' href='#another'>
+                      <a className='dropdown-item' href='#another'>
                         Something else here
                       </a>
                     </li>
                   </ul>
                 </li>
               </ul>
-              <form class='d-flex'>
+              <form className='d-flex'>
                 <input
-                  class='form-control me-2'
+                  className='form-control me-2'
                   type='search'
                   placeholder='Search'
                   aria-label='Search'
                 />
-                <button class='btn btn-outline-success' type='submit'>
+                <button className='btn btn-outline-success' type='submit'>
                   Search
                 </button>
               </form>
