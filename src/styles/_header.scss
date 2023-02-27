@@ -6,6 +6,7 @@ header .nav-color {
   color: rgba(49, 31, 25, 0.8196078431);
 }
 header .navbar-brand {
+  
   font-family: "Creepster", cursive;
   font-size: 3rem;
   color: rgba(49, 31, 25, 0.8196078431);
@@ -17,4 +18,16 @@ header .navbar-brand span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
   text-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    left: 80%;
+  }
 }

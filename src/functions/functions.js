@@ -5,4 +5,10 @@ const allCharacters = async (state) => {
   state(petition.data.results);
 }
 
-export {allCharacters};
+const idCharacter = async (id,state) => {
+  const petition = await axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+  // console.log(petition.data.name);
+  state(petition.data.name);
+}
+
+export {allCharacters, idCharacter};
